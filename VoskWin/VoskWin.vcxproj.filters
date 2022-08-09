@@ -24,9 +24,6 @@
     <ClInclude Include="..\..\..\src\json.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\src\kaldi_recognizer.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\src\language_model.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
@@ -39,15 +36,15 @@
     <ClInclude Include="..\..\..\src\vosk_api.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\src\recognizer.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="VoskWin.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\kaldi_recognizer.cc">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\language_model.cc">
@@ -60,6 +57,9 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\vosk_api.cc">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\recognizer.cc">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

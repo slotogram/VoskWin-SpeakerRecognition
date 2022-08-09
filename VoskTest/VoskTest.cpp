@@ -93,7 +93,7 @@
 		std::getline(infile, trials);
 		
 		infile.close();
-		for (int i = 0; i < 10; i++) {
+		//for (int i = 0; i < 10; i++) {
 
 			vosk_compute_path_xvectors(recognizer, "test_ulk.ark", train.c_str());
 			vosk_compute_path_xvectors(recognizer, "test_ulk_test.ark", test.c_str()); //"C:\\Data\\vox1\\test\\test3"
@@ -102,7 +102,7 @@
 			vosk_shuffle_trial_list(trials.c_str(), "temp.txt"); //"test_list.txt"
 
 			vosk_plda_score_trial(recognizer, "test_ulk_test.ark", "temp.txt", "output.txt");
-		}
+		//}
 
 		//vosk_plda_score_mic_len(recognizer, "spk-model\\spk.ark", "1", 3);
 		//vosk_compute_voxceleb_xvectors(recognizer, "vox_vad_my_model.ark", "C:\\Data\\vox1\\test\\wav");

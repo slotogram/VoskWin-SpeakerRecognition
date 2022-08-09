@@ -129,6 +129,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -158,18 +159,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\json.h" />
-    <ClInclude Include="..\..\..\src\kaldi_recognizer.h" />
     <ClInclude Include="..\..\..\src\language_model.h" />
     <ClInclude Include="..\..\..\src\model.h" />
+    <ClInclude Include="..\..\..\src\recognizer.h" />
     <ClInclude Include="..\..\..\src\spk_model.h" />
     <ClInclude Include="..\..\..\src\vosk_api.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\src\kaldi_recognizer.cc" />
     <ClCompile Include="..\..\..\src\language_model.cc" />
     <ClCompile Include="..\..\..\src\model.cc" />
+    <ClCompile Include="..\..\..\src\recognizer.cc" />
     <ClCompile Include="..\..\..\src\spk_model.cc" />
     <ClCompile Include="..\..\..\src\vosk_api.cc" />
     <ClCompile Include="pch.cpp">
